@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset = UTF-8>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Eco-Calculator </title>
+    <!--Swiper JS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- Boxicons CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container flex">
+            <a href="#" class="logo-content flex">
+            <i class='bx bx-calculator logo-icon'></i>
+            <span class="logo-text">Calculator</span>
+            </a>
+
+            <div class="menu-content">
+                    <ul class="menu-list flex">
+                        <li><a href="website.html" class="nav-link active-navlink">home</a></li>
+                        <li><a href="#about" class="nav-link">about</a></li>
+                        <li><a href="calculator.html" class="nav-link">calculator</a></li>
+                        <li><a href="#research_paper" class="nav-link">research paper</a></li>
+                        <li><a href="#survey" class="nav-link">survey</a></li>
+                   </ul>
+
+                    <div class="media-icons flex">
+                    <a href="https://www.facebook.com/qinxavier.gunda"><i class='bx bxl-facebook' ></i></a>
+                    </div>
+
+                   <i class='bx bx-x navClosebutton'></i>
+
+                </div>
+
+                <div class="contact-content flex">
+                    <i class='bx bx-phone phone-icon' ></i>
+                    <span class="phone-number">0945-498-0978</span>
+                </div>
+
+            <i class='bx bx-menu navOpenbutton' ></i>
+
+        </nav>
+    
+    </header>
+    <input class="userInput"
+type="number"
+id="UserInput"
+required
+min="0"/>
+<form action="/action_page.php">
+ <label for="unit">Unit:</label>
+ <select name="units" id="units">
+ <optgroup label="Units of measurements">
+    <option value="grams">grams</option>
+    <option value="kilograms">kilograms</option>
+ </optgroup>
+ </select>
+ <br><br>
+ <input type="submit" value="Submit">
+</form>
+</body>
+
